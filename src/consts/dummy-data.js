@@ -1,9 +1,9 @@
 const dummyData = {
   users: [
     {
-      fullName: "Behnam Azimi",
-      username: "Ali",
-      email: "bhnmzm@gmail.com",
+      fullName: "Ali Cangül",
+      username: "alicngl",
+      email: "cangulali1@gmail.com@gmail.com",
       password: "123",
     },
   ],

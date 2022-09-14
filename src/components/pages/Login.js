@@ -19,6 +19,7 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(credentials);
 
     auth
       .checkAuth(credentials)
@@ -48,7 +49,7 @@ export default function Login() {
         />
 
         <div>
-          <Button content={"Sign In"} />
+          <Button content={"Sign In"} type="submit" />
         </div>
         <Link to="/signup">Sign Up</Link>
       </form>
