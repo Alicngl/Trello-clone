@@ -1,13 +1,111 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.CardLabels .label,
+.CardMembers .member {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 0.25rem;
+  padding: 0 0.25rem;
+  margin-right: 0.2rem;
+}
+
+.CardLabels .label button,
+.CardMembers .member button {
+  all: initial;
+  font-size: 16px;
+  margin-left: 0.25rem;
+  padding: 0 0.25rem;
+}
+.MiniCardView .members {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.MiniCardView .title {
+  margin-bottom: 0.25rem;
+}
+
+.Column {
+  background-color: rgba(255, 255, 255, 0.1);
+  min-width: 240px;
+  min-height: 50px;
+  max-height: 70vh;
+  padding: 1rem;
+  margin-right: 1.5rem;
+}
+
+.MiniCardView {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #1c2631;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.MiniCardView:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.Modal .inner {
+  background-color: #202b38;
+  min-width: 468px;
+  max-width: 100%;
+  border: 1px solid #1c2631;
+}
+
+.ColumnsWrapper {
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  align-items: flex-start;
+}
+.BoardItem:hover,
+.WorkspaceItem:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.Modal .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(124, 124, 124, 0.13);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  backdrop-filter: blur(5px);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+button {
+  margin: 0;
 }
