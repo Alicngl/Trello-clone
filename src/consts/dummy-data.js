@@ -2,7 +2,7 @@ const dummyData = {
   users: [
     {
       fullName: "Ali Cangül",
-      username: "alicngl",
+      username: "behnam",
       email: "cangulali1@gmail.com@gmail.com",
       password: "123",
     },
@@ -12,7 +12,7 @@ const dummyData = {
       key: "personal",
       title: "Personal",
       description: "My Personal Workspace",
-      username: "behnam",
+      username: "ali",
     },
   ],
   boards: [
@@ -58,7 +58,7 @@ const dummyData = {
           checked: false,
         },
       ],
-      members: ["behnam"],
+      members: ["ali"],
       labels: ["label1", "label2"],
     },
   ],
